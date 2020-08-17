@@ -46,3 +46,88 @@ table {
 }
 /* fin reset css */
 
+
+html, body{
+	height: 100%;
+	width: 100%
+}
+
+#main_wrapper
+{
+	height: 100%;
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	font-family:sans-serif;
+	background-color: white;
+	border-right: solid red;
+}
+
+header{
+	flex: 2;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	background-color: rgb(87,156,135);
+	border: solid blue;
+}
+
+header h1{
+	color: rgb(253,203,70);
+	font-weight: 900;
+	font-size: 8em;
+	height: 100%;
+	width: 100%
+}
+
+.plage{
+	flex: 7; 
+	display: flex;
+	border: solid red 2px;
+	height: 100%;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.plage h1{
+	width: 100%;
+
+}
+
+.plage__menu{
+	border: solid purple;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 40%;
+}
+
+.plage__menu__logo_menu_1{
+	border: solid yellow;
+}
+
+.plage__menu h2{
+	border: solid brown;
+}
+
+.plage__menu h1{
+	border: solid black;
+}
+
+footer{
+	flex: 1;
+	display: flex;
+	border: solid blue;
+	justify-content: space-between;
+}
+
+footer h2{
+	border: solid red;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
