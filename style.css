@@ -8,126 +8,235 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	background: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: inherit;
 }
-/* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 /* fin reset css */
-
-
-html, body{
-	height: 100%;
-	width: 100%
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-#main_wrapper
-{
-	height: 100%;
-	width:100%;
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	font-family:sans-serif;
-	background-color: white;
-	border-right: solid red;
+#main_wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+  background-color: white;
 }
 
-header{
-	flex: 2;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content:center;
-	background-color: rgb(87,156,135);
-	border: solid blue;
+header {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  width: 100%;
+  background-color: #579c87;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header h1{
-	color: rgb(253,203,70);
-	font-weight: 900;
-	font-size: 8em;
-	height: 100%;
-	width: 100%
+header h1 {
+  color: #fdcb46;
+  font-weight: 900;
+  font-size: 2.2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.plage{
-	flex: 7; 
-	display: flex;
-	border: solid red 2px;
-	height: 100%;
-	width: 100%;
-	flex-direction: row;
-	flex-wrap: wrap;
+.plage {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.plage h1{
-	width: 100%;
-
+.plage__menu {
+  border: solid purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20%;
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.plage__menu{
-	border: solid purple;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	width: 40%;
+.plage__menu--h1-style1 {
+  color: red;
 }
 
-.plage__menu__logo_menu_1{
-	border: solid yellow;
+.plage__menu--h1-style2 {
+  color: red;
 }
 
-.plage__menu h2{
-	border: solid brown;
+.plage__menu--h1-style3 {
+  color: red;
 }
 
-.plage__menu h1{
-	border: solid black;
+.plage__menu--h1-style4 {
+  color: red;
 }
 
-footer{
-	flex: 1;
-	display: flex;
-	border: solid blue;
-	justify-content: space-between;
+.plage__menu--h2-style1 {
+  color: red;
 }
 
-footer h2{
-	border: solid red;
-	flex-direction: row;
-	flex-wrap: nowrap;
+.plage__menu--h2-style2 {
+  color: red;
 }
 
+.plage__menu--h2-style3 {
+  color: red;
+}
 
+.plage__menu--h2-style4 {
+  color: red;
+}
+
+.plage__menu__logo_menu_1 {
+  color: red;
+}
+
+.anonces {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.anonces p {
+  background-color: #579c87;
+  padding: 5px 20px 5px 20px;
+  color: #fdcb46;
+}
+
+footer {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  width: 100%;
+  background-color: #579c87;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer h2 {
+  color: #fdcb46;
+  font-weight: 900;
+  font-size: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 2% 0 2%;
+}
+/*# sourceMappingURL=style.css.map */
